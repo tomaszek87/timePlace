@@ -10,6 +10,6 @@ public class BaseActivity extends AppCompatActivity{
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);
-        ButterKnife.bind(layoutResID, this);
+        ButterKnife.bind(this);
     }
 }

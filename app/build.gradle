@@ -25,7 +25,10 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile libs.supportv4
     compile libs.appcompat
+    compile libs.cardView
     compile libs.design
     compile libs.butterknife
     compile libs.googleplayservices
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
 }
