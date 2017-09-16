@@ -8,7 +8,7 @@ import android.support.v4.view.ViewPager;
 
 import com.tomaszek.timeplace.R;
 import com.tomaszek.timeplace.modules.navigation.adapter.SampleFragmentPagerAdapter;
-import com.tomaszek.timeplace.modules.navigation.fragment.GeoFencesListFragment;
+import com.tomaszek.timeplace.modules.navigation.fragment.GeoFencesListWithMapFragment;
 import com.tomaszek.timeplace.modules.navigation.fragment.HomeFragment;
 import com.tomaszek.timeplace.utils.BaseActivity;
 
@@ -65,9 +65,8 @@ public class NavigationActivity extends BaseActivity {
 
     private List<Fragment> prepareFragmentsForPager() {
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(GeoFencesListFragment.newInstance());
         fragments.add(HomeFragment.newInstance());
-        fragments.add(HomeFragment.newInstance());
+        fragments.add(GeoFencesListWithMapFragment.newInstance(this));
         return fragments;
     }
 
