@@ -9,7 +9,7 @@ import java.util.List;
 
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private final int PAGE_COUNT = 3;
+    private int PAGE_COUNT = 2;
     private String tabTitles[] = new String[] { "", "", "" };
     private Context context;
     private List<Fragment> fragmentList;
@@ -18,6 +18,7 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         this.context = context;
         this.fragmentList = fragments;
+        this.PAGE_COUNT = fragments.size();
     }
 
     @Override
